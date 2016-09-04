@@ -1,0 +1,750 @@
+# -*- coding: mbcs -*-
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.models['Model-1'].ConstrainedSketch(name='__profile__', sheetSize=1.0)
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(0.0065, -0.15), 
+    point2=(0.059, -0.115))
+mdb.models['Model-1'].sketches['__profile__'].undo()
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(0.0065, -0.115), 
+    point2=(0.059, -0.115))
+mdb.models['Model-1'].sketches['__profile__'].HorizontalConstraint(
+    addUndoState=False, entity=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[2])
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(0.059, -0.115), 
+    point2=(0.059, -0.125))
+mdb.models['Model-1'].sketches['__profile__'].VerticalConstraint(addUndoState=
+    False, entity=mdb.models['Model-1'].sketches['__profile__'].geometry[3])
+mdb.models['Model-1'].sketches['__profile__'].PerpendicularConstraint(
+    addUndoState=False, entity1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[2], entity2=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[3])
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(0.059, -0.125), 
+    point2=(-0.059, -0.125))
+mdb.models['Model-1'].sketches['__profile__'].HorizontalConstraint(
+    addUndoState=False, entity=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[4])
+mdb.models['Model-1'].sketches['__profile__'].PerpendicularConstraint(
+    addUndoState=False, entity1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[3], entity2=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[4])
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(-0.059, -0.125), 
+    point2=(-0.059, -0.115))
+mdb.models['Model-1'].sketches['__profile__'].VerticalConstraint(addUndoState=
+    False, entity=mdb.models['Model-1'].sketches['__profile__'].geometry[5])
+mdb.models['Model-1'].sketches['__profile__'].PerpendicularConstraint(
+    addUndoState=False, entity1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[4], entity2=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[5])
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(-0.059, -0.115), 
+    point2=(-0.065, -0.115))
+mdb.models['Model-1'].sketches['__profile__'].HorizontalConstraint(
+    addUndoState=False, entity=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[6])
+mdb.models['Model-1'].sketches['__profile__'].PerpendicularConstraint(
+    addUndoState=False, entity1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[5], entity2=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[6])
+mdb.models['Model-1'].sketches['__profile__'].undo()
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(-0.059, -0.115), 
+    point2=(-0.065, -0.115))
+mdb.models['Model-1'].sketches['__profile__'].HorizontalConstraint(
+    addUndoState=False, entity=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[6])
+mdb.models['Model-1'].sketches['__profile__'].PerpendicularConstraint(
+    addUndoState=False, entity1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[5], entity2=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[6])
+mdb.models['Model-1'].sketches['__profile__'].undo()
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(-0.059, -0.115), 
+    point2=(-0.0065, -0.115))
+mdb.models['Model-1'].sketches['__profile__'].HorizontalConstraint(
+    addUndoState=False, entity=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[6])
+mdb.models['Model-1'].sketches['__profile__'].PerpendicularConstraint(
+    addUndoState=False, entity1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[5], entity2=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[6])
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(-0.0065, -0.115), 
+    point2=(-0.0065, 0.115))
+mdb.models['Model-1'].sketches['__profile__'].VerticalConstraint(addUndoState=
+    False, entity=mdb.models['Model-1'].sketches['__profile__'].geometry[7])
+mdb.models['Model-1'].sketches['__profile__'].PerpendicularConstraint(
+    addUndoState=False, entity1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[6], entity2=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[7])
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(-0.0065, 0.115), 
+    point2=(-0.059, 0.115))
+mdb.models['Model-1'].sketches['__profile__'].HorizontalConstraint(
+    addUndoState=False, entity=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[8])
+mdb.models['Model-1'].sketches['__profile__'].PerpendicularConstraint(
+    addUndoState=False, entity1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[7], entity2=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[8])
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(-0.059, 0.115), 
+    point2=(-0.059, 0.125))
+mdb.models['Model-1'].sketches['__profile__'].VerticalConstraint(addUndoState=
+    False, entity=mdb.models['Model-1'].sketches['__profile__'].geometry[9])
+mdb.models['Model-1'].sketches['__profile__'].PerpendicularConstraint(
+    addUndoState=False, entity1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[8], entity2=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[9])
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(-0.059, 0.125), 
+    point2=(0.059, 0.125))
+mdb.models['Model-1'].sketches['__profile__'].HorizontalConstraint(
+    addUndoState=False, entity=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[10])
+mdb.models['Model-1'].sketches['__profile__'].PerpendicularConstraint(
+    addUndoState=False, entity1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[9], entity2=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[10])
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(0.059, 0.125), 
+    point2=(0.059, 0.115))
+mdb.models['Model-1'].sketches['__profile__'].VerticalConstraint(addUndoState=
+    False, entity=mdb.models['Model-1'].sketches['__profile__'].geometry[11])
+mdb.models['Model-1'].sketches['__profile__'].PerpendicularConstraint(
+    addUndoState=False, entity1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[10], entity2=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[11])
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(0.059, 0.115), 
+    point2=(0.0065, 0.115))
+mdb.models['Model-1'].sketches['__profile__'].HorizontalConstraint(
+    addUndoState=False, entity=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[12])
+mdb.models['Model-1'].sketches['__profile__'].PerpendicularConstraint(
+    addUndoState=False, entity1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[11], entity2=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[12])
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(0.0065, 0.115), 
+    point2=(0.0065, -0.115))
+mdb.models['Model-1'].sketches['__profile__'].VerticalConstraint(addUndoState=
+    False, entity=mdb.models['Model-1'].sketches['__profile__'].geometry[13])
+mdb.models['Model-1'].sketches['__profile__'].PerpendicularConstraint(
+    addUndoState=False, entity1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[12], entity2=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[13])
+mdb.models['Model-1'].Part(dimensionality=THREE_D, name='Part-1', type=
+    DEFORMABLE_BODY)
+mdb.models['Model-1'].parts['Part-1'].BaseSolidExtrude(depth=2.0, sketch=
+    mdb.models['Model-1'].sketches['__profile__'])
+del mdb.models['Model-1'].sketches['__profile__']
+mdb.models['Model-1'].Material(name='Material-1')
+mdb.models['Model-1'].materials['Material-1'].Elastic(table=((206000000000.0, 
+    0.3), ))
+mdb.models['Model-1'].HomogeneousSolidSection(material='Material-1', name=
+    'Section-1', thickness=None)
+mdb.models['Model-1'].parts['Part-1'].SectionAssignment(offset=0.0, 
+    offsetField='', offsetType=MIDDLE_SURFACE, region=Region(
+    cells=mdb.models['Model-1'].parts['Part-1'].cells.getSequenceFromMask(
+    mask=('[#1 ]', ), )), sectionName='Section-1', thicknessAssignment=
+    FROM_SECTION)
+mdb.models['Model-1'].rootAssembly.DatumCsysByDefault(CARTESIAN)
+mdb.models['Model-1'].rootAssembly.Instance(dependent=OFF, name='Part-1-1', 
+    part=mdb.models['Model-1'].parts['Part-1'])
+mdb.models['Model-1'].rootAssembly.seedPartInstance(deviationFactor=0.1, 
+    minSizeFactor=0.1, regions=(
+    mdb.models['Model-1'].rootAssembly.instances['Part-1-1'], ), size=0.1)
+mdb.models['Model-1'].rootAssembly.generateMesh(regions=(
+    mdb.models['Model-1'].rootAssembly.instances['Part-1-1'], ))
+del mdb.models['Model-1'].rootAssembly.features['Part-1-1']
+mdb.models['Model-1'].rootAssembly.Instance(dependent=OFF, name='Part-1-1', 
+    part=mdb.models['Model-1'].parts['Part-1'])
+mdb.models['Model-1'].rootAssembly.seedPartInstance(deviationFactor=0.1, 
+    minSizeFactor=0.1, regions=(
+    mdb.models['Model-1'].rootAssembly.instances['Part-1-1'], ), size=0.005)
+mdb.models['Model-1'].StaticStep(name='Step-1', previous='Initial')
+mdb.models['Model-1'].DisplacementBC(amplitude=UNSET, createStepName='Step-1', 
+    distributionType=UNIFORM, fieldName='', fixed=OFF, localCsys=None, name=
+    'BC-1', region=Region(
+    faces=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].faces.getSequenceFromMask(
+    mask=('[#2000 ]', ), )), u1=0.0, u2=0.0, u3=0.0, ur1=0.0, ur2=0.0, ur3=0.0)
+mdb.models['Model-1'].ConcentratedForce(cf2=-10000.0, createStepName='Step-1', 
+    distributionType=UNIFORM, field='', localCsys=None, name='Load-1', region=
+    Region(
+    vertices=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].vertices.getSequenceFromMask(
+    mask=('[#10000 ]', ), )))
+mdb.models['Model-1'].ConstrainedSketch(name='__edit__', objectToCopy=
+    mdb.models['Model-1'].parts['Part-1'].features['Solid extrude-1'].sketch)
+mdb.models['Model-1'].parts['Part-1'].projectReferencesOntoSketch(filter=
+    COPLANAR_EDGES, sketch=mdb.models['Model-1'].sketches['__edit__'], 
+    upToFeature=
+    mdb.models['Model-1'].parts['Part-1'].features['Solid extrude-1'])
+mdb.models['Model-1'].sketches['__edit__'].Spot(point=(0.0, 0.125))
+mdb.models['Model-1'].sketches['__edit__'].CoincidentConstraint(addUndoState=
+    False, entity1=mdb.models['Model-1'].sketches['__edit__'].vertices[12], 
+    entity2=mdb.models['Model-1'].sketches['__edit__'].geometry[10])
+mdb.models['Model-1'].sketches['__edit__'].EqualDistanceConstraint(
+    addUndoState=False, entity1=
+    mdb.models['Model-1'].sketches['__edit__'].vertices[8], entity2=
+    mdb.models['Model-1'].sketches['__edit__'].vertices[9], midpoint=
+    mdb.models['Model-1'].sketches['__edit__'].vertices[12])
+mdb.models['Model-1'].sketches['__edit__'].Spot(point=(0.0, 0.125))
+mdb.models['Model-1'].sketches['__edit__'].Spot(point=(0.0, 0.125))
+mdb.models['Model-1'].sketches['__edit__'].Spot(point=(0.0, 0.125))
+mdb.models['Model-1'].parts['Part-1'].features['Solid extrude-1'].setValues(
+    sketch=mdb.models['Model-1'].sketches['__edit__'])
+del mdb.models['Model-1'].sketches['__edit__']
+mdb.Job(atTime=None, contactPrint=OFF, description='', echoPrint=OFF, 
+    explicitPrecision=SINGLE, getMemoryFromAnalysis=True, historyPrint=OFF, 
+    memory=90, memoryUnits=PERCENTAGE, model='Model-1', modelPrint=OFF, 
+    multiprocessingMode=DEFAULT, name='beam-3D', nodalOutputPrecision=SINGLE, 
+    numCpus=1, numGPUs=0, queue=None, resultsFormat=ODB, scratch='', type=
+    ANALYSIS, userSubroutine='', waitHours=0, waitMinutes=0)
+mdb.models['Model-1'].rootAssembly.generateMesh(regions=(
+    mdb.models['Model-1'].rootAssembly.instances['Part-1-1'], ))
+mdb.jobs['beam-3D'].submit(consistencyChecking=OFF, datacheckJob=True)
+mdb.jobs['beam-3D']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'USER-OEFU10UCJR', 'handle': 0, 'jobName': 'beam-3D'})
+mdb.jobs['beam-3D']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'DEGREE OF FREEDOM 4 IS NOT ACTIVE IN THIS MODEL AND CANNOT BE RESTRAINED.', 
+    'jobName': 'beam-3D'})
+mdb.jobs['beam-3D']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'DEGREE OF FREEDOM 5 IS NOT ACTIVE IN THIS MODEL AND CANNOT BE RESTRAINED.', 
+    'jobName': 'beam-3D'})
+mdb.jobs['beam-3D']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'DEGREE OF FREEDOM 6 IS NOT ACTIVE IN THIS MODEL AND CANNOT BE RESTRAINED.', 
+    'jobName': 'beam-3D'})
+mdb.jobs['beam-3D']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'E:\\Workspace\\Abaqus\\homework\\beam-3D.odb', 
+    'jobName': 'beam-3D'})
+mdb.jobs['beam-3D']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'beam-3D'})
+mdb.jobs['beam-3D']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'USER-OEFU10UCJR', 'handle': 9284, 'jobName': 'beam-3D'})
+mdb.jobs['beam-3D']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'beam-3D'})
+mdb.jobs['beam-3D']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'beam-3D'})
+mdb.jobs['beam-3D']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'beam-3D', 'memory': 1399.0})
+mdb.jobs['beam-3D']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'beam-3D'})
+mdb.jobs['beam-3D']._Message(JOB_COMPLETED, {
+    'time': 'Sat Jun 04 12:30:59 2016', 'jobName': 'beam-3D'})
+del mdb.jobs['beam-3D']
+mdb.Job(atTime=None, contactPrint=OFF, description='', echoPrint=OFF, 
+    explicitPrecision=SINGLE, getMemoryFromAnalysis=True, historyPrint=OFF, 
+    memory=90, memoryUnits=PERCENTAGE, model='Model-1', modelPrint=OFF, 
+    multiprocessingMode=DEFAULT, name='beam-3D', nodalOutputPrecision=SINGLE, 
+    numCpus=1, numGPUs=0, queue=None, resultsFormat=ODB, scratch='', type=
+    ANALYSIS, userSubroutine='', waitHours=0, waitMinutes=0)
+mdb.jobs['beam-3D'].submit(consistencyChecking=OFF)
+mdb.jobs['beam-3D']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'USER-OEFU10UCJR', 'handle': 0, 'jobName': 'beam-3D'})
+mdb.jobs['beam-3D']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'DEGREE OF FREEDOM 4 IS NOT ACTIVE IN THIS MODEL AND CANNOT BE RESTRAINED.', 
+    'jobName': 'beam-3D'})
+mdb.jobs['beam-3D']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'DEGREE OF FREEDOM 5 IS NOT ACTIVE IN THIS MODEL AND CANNOT BE RESTRAINED.', 
+    'jobName': 'beam-3D'})
+mdb.jobs['beam-3D']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'DEGREE OF FREEDOM 6 IS NOT ACTIVE IN THIS MODEL AND CANNOT BE RESTRAINED.', 
+    'jobName': 'beam-3D'})
+mdb.jobs['beam-3D']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'E:\\Workspace\\Abaqus\\homework\\beam-3D.odb', 
+    'jobName': 'beam-3D'})
+mdb.jobs['beam-3D']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'beam-3D'})
+mdb.jobs['beam-3D']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'USER-OEFU10UCJR', 'handle': 8988, 'jobName': 'beam-3D'})
+mdb.jobs['beam-3D']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'beam-3D'})
+mdb.jobs['beam-3D']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'beam-3D'})
+mdb.jobs['beam-3D']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'beam-3D', 'memory': 1710.0})
+mdb.jobs['beam-3D']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'beam-3D'})
+mdb.jobs['beam-3D']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'beam-3D', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['beam-3D']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'beam-3D'})
+mdb.jobs['beam-3D']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'beam-3D'})
+mdb.jobs['beam-3D']._Message(JOB_COMPLETED, {
+    'time': 'Sat Jun 04 12:33:37 2016', 'jobName': 'beam-3D'})
+mdb.models['Model-1'].rootAssembly.DatumCsysByThreePoints(coordSysType=
+    CARTESIAN, line1=(1.0, 0.0, 0.0), line2=(0.0, 1.0, 0.0), name=
+    'Datum csys-2', origin=(0.0, 0.0, 0.0))
+del mdb.models['Model-1'].steps['Step-1']
+mdb.models['Model-1'].StaticStep(name='Step-1', previous='Initial')
+mdb.models['Model-1'].DisplacementBC(amplitude=UNSET, createStepName='Step-1', 
+    distributionType=UNIFORM, fieldName='', fixed=OFF, localCsys=None, name=
+    'BC-1', region=Region(
+    faces=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].faces.getSequenceFromMask(
+    mask=('[#2000 ]', ), )), u1=0.0, u2=0.0, u3=0.0, ur1=0.0, ur2=0.0, ur3=0.0)
+mdb.models['Model-1'].rootAssembly.DatumPointByCoordinate(coords=(0.0, 0.125, 
+    2.0))
+mdb.models['Model-1'].rootAssembly.DatumPointByCoordinate(coords=(0.0, 0.125, 
+    2.0))
+mdb.models['Model-1'].rootAssembly.deleteMesh(regions=
+    mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].cells.getSequenceFromMask(
+    ('[#1 ]', ), ))
+mdb.models['Model-1'].rootAssembly.PartitionCellByPlaneThreePoints(cells=
+    mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].cells.getSequenceFromMask(
+    ('[#1 ]', ), ), point1=mdb.models['Model-1'].rootAssembly.datums[13], 
+    point2=
+    mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].InterestingPoint(
+    mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].edges[7], MIDDLE), 
+    point3=
+    mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].InterestingPoint(
+    mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].edges[9], MIDDLE))
+mdb.models['Model-1'].ConcentratedForce(cf2=-10000.0, createStepName='Step-1', 
+    distributionType=UNIFORM, field='', localCsys=None, name='Load-1', region=
+    Region(
+    vertices=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].vertices.getSequenceFromMask(
+    mask=('[#4 ]', ), )))
+del mdb.jobs['beam-3D']
+mdb.Job(atTime=None, contactPrint=OFF, description='', echoPrint=OFF, 
+    explicitPrecision=SINGLE, getMemoryFromAnalysis=True, historyPrint=OFF, 
+    memory=90, memoryUnits=PERCENTAGE, model='Model-1', modelPrint=OFF, 
+    multiprocessingMode=DEFAULT, name='beam-3D', nodalOutputPrecision=SINGLE, 
+    numCpus=1, numGPUs=0, queue=None, resultsFormat=ODB, scratch='', type=
+    ANALYSIS, userSubroutine='', waitHours=0, waitMinutes=0)
+mdb.models['Model-1'].rootAssembly.generateMesh(regions=(
+    mdb.models['Model-1'].rootAssembly.instances['Part-1-1'], ))
+mdb.jobs['beam-3D'].submit(consistencyChecking=OFF)
+mdb.jobs['beam-3D']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'USER-OEFU10UCJR', 'handle': 0, 'jobName': 'beam-3D'})
+mdb.jobs['beam-3D']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'DEGREE OF FREEDOM 4 IS NOT ACTIVE IN THIS MODEL AND CANNOT BE RESTRAINED.', 
+    'jobName': 'beam-3D'})
+mdb.jobs['beam-3D']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'DEGREE OF FREEDOM 5 IS NOT ACTIVE IN THIS MODEL AND CANNOT BE RESTRAINED.', 
+    'jobName': 'beam-3D'})
+mdb.jobs['beam-3D']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'DEGREE OF FREEDOM 6 IS NOT ACTIVE IN THIS MODEL AND CANNOT BE RESTRAINED.', 
+    'jobName': 'beam-3D'})
+mdb.jobs['beam-3D']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'E:\\Workspace\\Abaqus\\homework\\beam-3D.odb', 
+    'jobName': 'beam-3D'})
+mdb.jobs['beam-3D']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'beam-3D'})
+mdb.jobs['beam-3D']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'USER-OEFU10UCJR', 'handle': 8624, 'jobName': 'beam-3D'})
+mdb.jobs['beam-3D']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'beam-3D'})
+mdb.jobs['beam-3D']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'beam-3D'})
+mdb.jobs['beam-3D']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'beam-3D', 'memory': 1378.0})
+mdb.jobs['beam-3D']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'beam-3D'})
+mdb.jobs['beam-3D']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'beam-3D', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['beam-3D']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'beam-3D'})
+mdb.jobs['beam-3D']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'beam-3D'})
+mdb.jobs['beam-3D']._Message(JOB_COMPLETED, {
+    'time': 'Sat Jun 04 12:46:48 2016', 'jobName': 'beam-3D'})
+# Save by Administrator on 2016_06_04-12.46.59; build 2016 2015_09_25-04.31.09 126547
+# Save by Administrator on 2016_06_04-15.18.23; build 2016 2015_09_25-04.31.09 126547
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.models['Model-1'].rootAssembly.DatumPointByCoordinate(coords=(0.0, 0.125, 
+    2.0))
+mdb.models['Model-1'].Coupling(controlPoint=Region(
+    vertices=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].vertices.getSequenceFromMask(
+    mask=('[#4 ]', ), )), couplingType=KINEMATIC, influenceRadius=WHOLE_SURFACE
+    , localCsys=None, name='Constraint-1', surface=Region(
+    side1Faces=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].faces.getSequenceFromMask(
+    mask=('[#10 ]', ), )), u1=ON, u2=ON, u3=ON, ur1=ON, ur2=ON, ur3=ON)
+mdb.models['Model-1'].Coupling(controlPoint=Region(
+    vertices=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].vertices.getSequenceFromMask(
+    mask=('[#4 ]', ), )), couplingType=KINEMATIC, influenceRadius=WHOLE_SURFACE
+    , localCsys=None, name='Constraint-2', surface=Region(
+    side1Faces=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].faces.getSequenceFromMask(
+    mask=('[#2000 ]', ), )), u1=ON, u2=ON, u3=ON, ur1=ON, ur2=ON, ur3=ON)
+mdb.models['Model-1'].Coupling(controlPoint=Region(
+    vertices=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].vertices.getSequenceFromMask(
+    mask=('[#4 ]', ), )), couplingType=KINEMATIC, influenceRadius=WHOLE_SURFACE
+    , localCsys=None, name='Constraint-3', surface=Region(
+    side1Faces=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].faces.getSequenceFromMask(
+    mask=('[#2 ]', ), )), u1=ON, u2=ON, u3=ON, ur1=ON, ur2=ON, ur3=ON)
+mdb.models['Model-1'].Coupling(controlPoint=Region(
+    vertices=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].vertices.getSequenceFromMask(
+    mask=('[#4 ]', ), )), couplingType=KINEMATIC, influenceRadius=WHOLE_SURFACE
+    , localCsys=None, name='Constraint-4', surface=Region(
+    side1Faces=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].faces.getSequenceFromMask(
+    mask=('[#20000 ]', ), )), u1=ON, u2=ON, u3=ON, ur1=ON, ur2=ON, ur3=ON)
+del mdb.jobs['beam-3D']
+mdb.Job(atTime=None, contactPrint=OFF, description='', echoPrint=OFF, 
+    explicitPrecision=SINGLE, getMemoryFromAnalysis=True, historyPrint=OFF, 
+    memory=90, memoryUnits=PERCENTAGE, model='Model-1', modelPrint=OFF, 
+    multiprocessingMode=DEFAULT, name='Job-1', nodalOutputPrecision=SINGLE, 
+    numCpus=1, numGPUs=0, queue=None, resultsFormat=ODB, scratch='', type=
+    ANALYSIS, userSubroutine='', waitHours=0, waitMinutes=0)
+del mdb.jobs['Job-1']
+mdb.Job(atTime=None, contactPrint=OFF, description='', echoPrint=OFF, 
+    explicitPrecision=SINGLE, getMemoryFromAnalysis=True, historyPrint=OFF, 
+    memory=90, memoryUnits=PERCENTAGE, model='Model-1', modelPrint=OFF, 
+    multiprocessingMode=DEFAULT, name='beam_3D', nodalOutputPrecision=SINGLE, 
+    numCpus=1, numGPUs=0, queue=None, resultsFormat=ODB, scratch='', type=
+    ANALYSIS, userSubroutine='', waitHours=0, waitMinutes=0)
+mdb.jobs['beam_3D'].submit(consistencyChecking=OFF)
+mdb.jobs['beam_3D']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'USER-OEFU10UCJR', 'handle': 0, 'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': '474 nodes are used more than once as a slave node in *TIE keyword. One of the *TIE constraints at each of these nodes have been removed. The nodes have been identified in node set WarnNodeOverconTieSlave.', 
+    'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 285 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'E:\\Workspace\\Abaqus\\homework\\beam_3D.odb', 
+    'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'USER-OEFU10UCJR', 'handle': 11412, 'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'beam_3D', 'memory': 1256.0})
+mdb.jobs['beam_3D']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'beam_3D', 'severe': 0, 'iterations': 2, 
+    'phase': STANDARD_PHASE, 'equilibrium': 2})
+mdb.jobs['beam_3D']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(JOB_COMPLETED, {
+    'time': 'Sat Jun 04 16:02:43 2016', 'jobName': 'beam_3D'})
+del mdb.models['Model-1'].constraints['Constraint-3']
+del mdb.models['Model-1'].constraints['Constraint-4']
+del mdb.jobs['beam_3D']
+mdb.Job(atTime=None, contactPrint=OFF, description='', echoPrint=OFF, 
+    explicitPrecision=SINGLE, getMemoryFromAnalysis=True, historyPrint=OFF, 
+    memory=90, memoryUnits=PERCENTAGE, model='Model-1', modelPrint=OFF, 
+    multiprocessingMode=DEFAULT, name='beam_3D', nodalOutputPrecision=SINGLE, 
+    numCpus=1, numGPUs=0, queue=None, resultsFormat=ODB, scratch='', type=
+    ANALYSIS, userSubroutine='', waitHours=0, waitMinutes=0)
+mdb.jobs['beam_3D'].submit(consistencyChecking=OFF)
+mdb.jobs['beam_3D']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'USER-OEFU10UCJR', 'handle': 0, 'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': '400 nodes are used more than once as a slave node in *TIE keyword. One of the *TIE constraints at each of these nodes have been removed. The nodes have been identified in node set WarnNodeOverconTieSlave.', 
+    'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 285 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'E:\\Workspace\\Abaqus\\homework\\beam_3D.odb', 
+    'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'USER-OEFU10UCJR', 'handle': 4652, 'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'beam_3D', 'memory': 1258.0})
+mdb.jobs['beam_3D']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'beam_3D', 'severe': 0, 'iterations': 2, 
+    'phase': STANDARD_PHASE, 'equilibrium': 2})
+mdb.jobs['beam_3D']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(JOB_COMPLETED, {
+    'time': 'Sat Jun 04 16:07:19 2016', 'jobName': 'beam_3D'})
+del mdb.models['Model-1'].constraints['Constraint-1']
+del mdb.models['Model-1'].constraints['Constraint-2']
+mdb.models['Model-1'].Coupling(controlPoint=Region(
+    vertices=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].vertices.getSequenceFromMask(
+    mask=('[#4 ]', ), )), couplingType=KINEMATIC, influenceRadius=WHOLE_SURFACE
+    , localCsys=None, name='Constraint-1', surface=Region(
+    faces=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].faces.getSequenceFromMask(
+    mask=('[#10 ]', ), )), u1=ON, u2=ON, u3=ON, ur1=ON, ur2=ON, ur3=ON)
+mdb.models['Model-1'].constraints['Constraint-1'].setValues(surface=Region(
+    faces=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].faces.getSequenceFromMask(
+    mask=('[#2 ]', ), )))
+del mdb.models['Model-1'].constraints['Constraint-1']
+# Save by Administrator on 2016_06_04-16.09.21; build 2016 2015_09_25-04.31.09 126547
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.models['Model-1'].rootAssembly.Set(name='m_Set-3', vertices=
+    mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].vertices.getSequenceFromMask(
+    ('[#4 ]', ), ))
+mdb.models['Model-1'].rootAssembly.Surface(name='s_Surf-1', side1Faces=
+    mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].faces.getSequenceFromMask(
+    ('[#2000 ]', ), ))
+mdb.models['Model-1'].Coupling(controlPoint=
+    mdb.models['Model-1'].rootAssembly.sets['m_Set-3'], couplingType=KINEMATIC, 
+    influenceRadius=WHOLE_SURFACE, localCsys=None, name='Constraint-1', 
+    surface=mdb.models['Model-1'].rootAssembly.surfaces['s_Surf-1'], u1=ON, u2=
+    ON, u3=ON, ur1=ON, ur2=ON, ur3=ON)
+mdb.models['Model-1'].Coupling(controlPoint=Region(
+    vertices=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].vertices.getSequenceFromMask(
+    mask=('[#4 ]', ), )), couplingType=KINEMATIC, influenceRadius=WHOLE_SURFACE
+    , localCsys=None, name='Constraint-2', surface=Region(
+    side1Faces=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].faces.getSequenceFromMask(
+    mask=('[#10 ]', ), )), u1=ON, u2=ON, u3=ON, ur1=ON, ur2=ON, ur3=ON)
+del mdb.jobs['beam_3D']
+mdb.Job(atTime=None, contactPrint=OFF, description='', echoPrint=OFF, 
+    explicitPrecision=SINGLE, getMemoryFromAnalysis=True, historyPrint=OFF, 
+    memory=90, memoryUnits=PERCENTAGE, model='Model-1', modelPrint=OFF, 
+    multiprocessingMode=DEFAULT, name='beam_3D', nodalOutputPrecision=SINGLE, 
+    numCpus=1, numGPUs=0, queue=None, resultsFormat=ODB, scratch='', type=
+    ANALYSIS, userSubroutine='', waitHours=0, waitMinutes=0)
+mdb.jobs['beam_3D'].submit(consistencyChecking=OFF)
+mdb.jobs['beam_3D']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'USER-OEFU10UCJR', 'handle': 0, 'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': '400 nodes are used more than once as a slave node in *TIE keyword. One of the *TIE constraints at each of these nodes have been removed. The nodes have been identified in node set WarnNodeOverconTieSlave.', 
+    'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 285 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'E:\\Workspace\\Abaqus\\homework\\beam_3D.odb', 
+    'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'USER-OEFU10UCJR', 'handle': 12148, 'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'beam_3D', 'memory': 1258.0})
+mdb.jobs['beam_3D']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'beam_3D', 'severe': 0, 'iterations': 2, 
+    'phase': STANDARD_PHASE, 'equilibrium': 2})
+mdb.jobs['beam_3D']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(JOB_COMPLETED, {
+    'time': 'Thu Jun 09 04:35:05 2016', 'jobName': 'beam_3D'})
+del mdb.models['Model-1'].constraints['Constraint-2']
+del mdb.models['Model-1'].constraints['Constraint-1']
+del mdb.models['Model-1'].rootAssembly.features['Partition cell-1']
+mdb.models['Model-1'].rootAssembly.deleteFeatures(('Datum pt-3', 'Datum pt-2'))
+del mdb.models['Model-1'].steps['Step-1']
+mdb.models['Model-1'].StaticStep(name='Step-1', previous='Initial')
+mdb.models['Model-1'].rootAssembly.DatumPlaneByPrincipalPlane(offset=0.0, 
+    principalPlane=YZPLANE)
+mdb.models['Model-1'].rootAssembly.Set(faces=
+    mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].faces.getSequenceFromMask(
+    ('[#100 ]', ), ), name='m_Set-3')
+mdb.models['Model-1'].rootAssembly.regenerate()
+mdb.models['Model-1'].rootAssembly.regenerate()
+mdb.models['Model-1'].rootAssembly.DatumPointByCoordinate(coords=(0.0, 0.125, 
+    2.0))
+mdb.models['Model-1'].rootAssembly.DatumPointByCoordinate(coords=(0.0, 0.0, 
+    0.0))
+del mdb.models['Model-1'].rootAssembly.features['Datum pt-2']
+del mdb.models['Model-1'].rootAssembly.features['Datum pt-3']
+mdb.models['Model-1'].rootAssembly.regenerate()
+mdb.models['Model-1'].rootAssembly.PartitionCellByPlanePointNormal(cells=
+    mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].cells.getSequenceFromMask(
+    ('[#1 ]', ), ), normal=
+    mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].edges[25], point=
+    mdb.models['Model-1'].rootAssembly.datums[12])
+mdb.models['Model-1'].ConcentratedForce(cf2=-10000.0, createStepName='Step-1', 
+    distributionType=UNIFORM, field='', localCsys=None, name='Load-1', region=
+    Region(
+    vertices=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].vertices.getSequenceFromMask(
+    mask=('[#4 ]', ), )))
+mdb.models['Model-1'].Coupling(controlPoint=Region(
+    vertices=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].vertices.getSequenceFromMask(
+    mask=('[#4 ]', ), )), couplingType=KINEMATIC, influenceRadius=WHOLE_SURFACE
+    , localCsys=None, name='Constraint-1', surface=Region(
+    side1Faces=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].faces.getSequenceFromMask(
+    mask=('[#2000 ]', ), )), u1=ON, u2=ON, u3=ON, ur1=ON, ur2=ON, ur3=ON)
+del mdb.jobs['beam_3D']
+mdb.Job(atTime=None, contactPrint=OFF, description='', echoPrint=OFF, 
+    explicitPrecision=SINGLE, getMemoryFromAnalysis=True, historyPrint=OFF, 
+    memory=90, memoryUnits=PERCENTAGE, model='Model-1', modelPrint=OFF, 
+    multiprocessingMode=DEFAULT, name='beam_3D', nodalOutputPrecision=SINGLE, 
+    numCpus=1, numGPUs=0, queue=None, resultsFormat=ODB, scratch='', type=
+    ANALYSIS, userSubroutine='', waitHours=0, waitMinutes=0)
+mdb.models['Model-1'].DisplacementBC(amplitude=UNSET, createStepName='Step-1', 
+    distributionType=UNIFORM, fieldName='', fixed=OFF, localCsys=None, name=
+    'BC-1', region=Region(
+    faces=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].faces.getSequenceFromMask(
+    mask=('[#40000 ]', ), )), u1=0.0, u2=0.0, u3=0.0, ur1=0.0, ur2=0.0, ur3=
+    0.0)
+mdb.models['Model-1'].DisplacementBC(amplitude=UNSET, createStepName='Step-1', 
+    distributionType=UNIFORM, fieldName='', fixed=OFF, localCsys=None, name=
+    'BC-2', region=Region(
+    faces=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].faces.getSequenceFromMask(
+    mask=('[#8 ]', ), )), u1=0.0, u2=0.0, u3=0.0, ur1=0.0, ur2=0.0, ur3=0.0)
+mdb.models['Model-1'].rootAssembly.generateMesh(regions=(
+    mdb.models['Model-1'].rootAssembly.instances['Part-1-1'], ))
+del mdb.jobs['beam_3D']
+mdb.Job(atTime=None, contactPrint=OFF, description='', echoPrint=OFF, 
+    explicitPrecision=SINGLE, getMemoryFromAnalysis=True, historyPrint=OFF, 
+    memory=90, memoryUnits=PERCENTAGE, model='Model-1', modelPrint=OFF, 
+    multiprocessingMode=DEFAULT, name='beam_3D', nodalOutputPrecision=SINGLE, 
+    numCpus=1, numGPUs=0, queue=None, resultsFormat=ODB, scratch='', type=
+    ANALYSIS, userSubroutine='', waitHours=0, waitMinutes=0)
+mdb.jobs['beam_3D'].submit(consistencyChecking=OFF)
+mdb.jobs['beam_3D']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'USER-OEFU10UCJR', 'handle': 0, 'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 285 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'E:\\Workspace\\Abaqus\\homework\\beam_3D.odb', 
+    'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'USER-OEFU10UCJR', 'handle': 11612, 'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'beam_3D', 'memory': 1321.0})
+mdb.jobs['beam_3D']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'beam_3D', 'severe': 0, 'iterations': 2, 
+    'phase': STANDARD_PHASE, 'equilibrium': 2})
+mdb.jobs['beam_3D']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(JOB_COMPLETED, {
+    'time': 'Thu Jun 09 04:53:01 2016', 'jobName': 'beam_3D'})
+del mdb.models['Model-1'].constraints['Constraint-1']
+mdb.models['Model-1'].Coupling(controlPoint=Region(
+    vertices=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].vertices.getSequenceFromMask(
+    mask=('[#4 ]', ), )), couplingType=KINEMATIC, influenceRadius=WHOLE_SURFACE
+    , localCsys=None, name='Constraint-1', surface=Region(
+    faces=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].faces.getSequenceFromMask(
+    mask=('[#2 ]', ), )), u1=ON, u2=ON, u3=ON, ur1=ON, ur2=ON, ur3=ON)
+mdb.models['Model-1'].Coupling(controlPoint=Region(
+    vertices=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].vertices.getSequenceFromMask(
+    mask=('[#4 ]', ), )), couplingType=KINEMATIC, influenceRadius=WHOLE_SURFACE
+    , localCsys=None, name='Constraint-2', surface=Region(
+    faces=mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].faces.getSequenceFromMask(
+    mask=('[#20000 ]', ), )), u1=ON, u2=ON, u3=ON, ur1=ON, ur2=ON, ur3=ON)
+del mdb.jobs['beam_3D']
+mdb.Job(atTime=None, contactPrint=OFF, description='', echoPrint=OFF, 
+    explicitPrecision=SINGLE, getMemoryFromAnalysis=True, historyPrint=OFF, 
+    memory=90, memoryUnits=PERCENTAGE, model='Model-1', modelPrint=OFF, 
+    multiprocessingMode=DEFAULT, name='beam_3D', nodalOutputPrecision=SINGLE, 
+    numCpus=1, numGPUs=0, queue=None, resultsFormat=ODB, scratch='', type=
+    ANALYSIS, userSubroutine='', waitHours=0, waitMinutes=0)
+mdb.jobs['beam_3D'].submit(consistencyChecking=OFF)
+mdb.jobs['beam_3D']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'USER-OEFU10UCJR', 'handle': 0, 'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'WHENEVER A TRANSLATION (ROTATION) DOF AT A NODE IS CONSTRAINED BY A KINEMATIC COUPLING DEFINITION THE TRANSLATION (ROTATION) DOFS FOR THAT NODE CANNOT BE INCLUDED IN ANY OTHER CONSTRAINT INCLUDING MPCS, RIGID BODIES, ETC.', 
+    'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': '50 nodes are used more than once as a slave node in *TIE keyword. One of the *TIE constraints at each of these nodes have been removed. The nodes have been identified in node set WarnNodeOverconTieSlave.', 
+    'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'MPCS (EXTERNAL or INTERNAL, including those generated from rigid body definitions), KINEMATIC COUPLINGS, AND/OR EQUATIONS WILL ACTIVATE ADDITIONAL DEGREES OF FREEDOM', 
+    'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'Boundary conditions are specified on inactive dof of 285 nodes. The nodes have been identified in node set WarnNodeBCInactiveDof.', 
+    'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'E:\\Workspace\\Abaqus\\homework\\beam_3D.odb', 
+    'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'USER-OEFU10UCJR', 'handle': 8148, 'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'beam_3D', 'memory': 1388.0})
+mdb.jobs['beam_3D']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'beam_3D', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['beam_3D']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'beam_3D'})
+mdb.jobs['beam_3D']._Message(JOB_COMPLETED, {
+    'time': 'Thu Jun 09 05:13:45 2016', 'jobName': 'beam_3D'})
+# Save by Administrator on 2016_06_09-05.31.56; build 2016 2015_09_25-04.31.09 126547
